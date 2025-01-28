@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="code.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-container">
+            <label for="length">Password Length:</label>
+            <input type="number" id="length" value="12" min="4" max="32">
+            <button onclick="generatePassword()">Generate Password</button>
+            <p id="password"></p>
+            <p id="strength-text"></p>
+            <button id="copy-button" onclick="copyPassword()">Copy Password</button>
+        </div>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
